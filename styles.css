@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex; /* Utiliza o flexbox para organizar os elementos*/
+    flex-direction: column; /* Alinha os elementos em uma coluna */
+    align-items: center; /*Centraliza os elementos horizontalmente*/
+    justify-content: center; /*Centraliza os elementos verticalmente*/
+    height: 100vh; /* Define a altura da pagina para 100% altura da viewport */
+    font-family: Arial, sans-serif; /* Define a fonte padráo*/
+    background-color: #f0f0f0; /* Define a cor de fundo */
+}
+
+/* Estilo do título */
+
+h1 {
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Define o estilo do tabuleiro do jogo */
+#gameBoard {
+    display: grid; /* Utiliza grid layout para organizar as células */
+    grid-template-columns: repeat(3,100px); /*Define 3 colunas com largura de 100px cada */
+    gap: 10px; /*Define o espaçamento entre as células */
+}
+
+/* Define o estilo das células do tabuleiro */
+
+.cell {
+    width: 100px; /*Define a largura das célula */
+    height: 100px; /* Define a altura das célula */
+    display: flex; /* Utiliza o flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza o conteúdo horizontalemnte */
+    justify-content: center; /* Centraliza o conteúdo horizontalemnte */
+    background-color: #fff; /* Define a cor de fundo */
+    border: 1px solid #000; /* Define o tamanho da fonte */
+    font-size: 24px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que a célula é clicavel*/
+}
+
+/* Define o estilo do botão de reiniciar */
+#restartButton {
+    margin-top: 20px; /* Adiciona margem superior */
+    padding: 10px 20px; /* Define o espaçamento interno */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicavel*/
+}
